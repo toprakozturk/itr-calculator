@@ -15,8 +15,7 @@
 
     <div id="app" class="container my-4">
         <h1>Information transfer rate calculator</h1>
-        <img src=></img>
-        <div class="row">
+        <div class="row mt-4">
             <div class="col-4">
                 <label for="time">Total classification time in seconds (T)</label>
                 <input type="text" v-model="time">
@@ -31,11 +30,17 @@
             </div>
         </div>
         <div class="row my-4">
+            <img src="formula.png" class="img-fluid" alt="formula" />
+        </div>
+        <div class="row">
             <h2>ITR: {{ itr.toFixed(2) }} bits/min</h2>
         </div>
-        <hr>
         <div class="row">
-
+            <p>
+                This formula was developed by Wolpaw JR et al. in year 2000 in can be read in detail in a review article
+                named <i>Brain-computer interface technology: a review of the first international meeting.</i> PubMed
+                entry of the article can be found <a href="https://www.ncbi.nlm.nih.gov/pubmed/10896178">here</a>.
+            </p>
         </div>
     </div>
 
